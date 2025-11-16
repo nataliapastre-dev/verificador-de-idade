@@ -1,0 +1,160 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  background: linear-gradient(to bottom, #cfe8ff, #88b7ff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #1f2937;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+h1 {
+  font-size: 2.3rem;
+  color: #073e7b;
+  font-weight: 700;
+}
+
+/* CARD CENTRAL */
+.container {
+  background: #ffffffee;
+  width: 92%;
+  max-width: 480px;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.6s ease;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  padding: 12px;
+  border: 1px solid #c5d3e6;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.25s;
+}
+
+input[type="number"]:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 4px #3b82f6aa;
+}
+
+/* SEXO */
+fieldset {
+  border: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* BOTÃO */
+button {
+  padding: 14px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1e4ec7;
+  transform: scale(1.03);
+}
+
+/* RESULTADO */
+#resultado {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#res {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+/* FOTO CENTRALIZADA */
+#imgPessoa {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: none;
+  margin: 0 auto;            /* CENTRALIZA */
+  margin-top: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.7s ease;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #073e7b;
+  font-size: 0.95rem;
+  margin-top: auto;
+  font-style: italic;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  #imgPessoa {
+    width: 190px;
+    height: 190px;
+  }
+}
