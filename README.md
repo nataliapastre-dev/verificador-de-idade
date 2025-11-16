@@ -1,8 +1,9 @@
 # 🧠 Verificador de Idade
 
 <p align="center">
-  <img src="https://i.postimg.cc/QdMsgf3z/Chat-GPT-Image-16-de-nov-de-2025-10-06-02.png" width="420">
+  <img src="https://i.postimg.cc/dVB5Wgkk/Chat-GPT-Image-16-de-nov-de-2025-19-14-39.png" width="420">
 </p>
+
 
 ---
 
